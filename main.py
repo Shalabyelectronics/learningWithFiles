@@ -18,13 +18,16 @@
 # Last mode we learn today was mode="a" append and it will add text without effecting the previous one.
 # Finally write("Anystr") will write on the file.
 
-with open("new_file.txt", mode="w") as file:
-    file.write("Hi my name is Mr:X, and I like to be hacker")
+# with open("new_file.txt", mode="w") as file:
+#     file.write("Hi my name is Mr:X, and I like to be hacker")
 
 # I noticed when I open and read file I can't write with the same with...as keywords.
+# So I need to keep them separate for now.
 
+with open("new_file.txt", mode="a") as file:
+    file.write("\nI don't like stupid people.")
 
-
+print(open("new_file.txt").read())
 
 
 
